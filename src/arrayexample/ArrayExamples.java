@@ -7,7 +7,7 @@ public class ArrayExamples {
     public static void main(String[] args) {
     //int n = Integer.parseInt(JOptionPane.showInputDialog("Строки: "));
     //int m = Integer.parseInt(JOptionPane.showInputDialog("Столбцы: "));
-    int n = (int)(5*Math.random()+2);
+    int n = (int)(7*Math.random()+2);
     int array [][] = new int [n][];
     int i;
     int j;
@@ -15,7 +15,7 @@ public class ArrayExamples {
     int c ;
     for (i=0; i<n; i++){
         
-        k = (int)(5*Math.random()+2);
+        k = (int)(7*Math.random()+2);
         array[i] = new int [k];
         for (j=0; j<k ; j++){
             array[i][j] = (int)(11*Math.random()+1);
