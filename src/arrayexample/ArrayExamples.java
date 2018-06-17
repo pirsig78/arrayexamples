@@ -13,10 +13,11 @@ public class ArrayExamples {
     int j;
     int k;
     int c ;
+    
     for (i=0; i<n; i++){
-        
         k = (int)(7*Math.random()+2);
         array[i] = new int [k];
+        
         for (j=0; j<k ; j++){
             array[i][j] = (int)(11*Math.random()+1);
             String text = array[i][j]<10 ? "   " : "  ";
@@ -29,8 +30,8 @@ public class ArrayExamples {
     for (i=0; i<array.length; i++){
         for (j=0; j<array[i].length; j++ ){
             for (n=i; n<array.length; n++){
-                if(n==i)c=j;
-                    else c=0;
+                c=(n==i) ? j : 0;
+                
                 for ( int m = c ; m<array[n].length; m++ ){
                     
                     if (array[i][j]>array[n][m]){
